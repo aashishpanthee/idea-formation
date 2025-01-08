@@ -1,9 +1,7 @@
 import AllIdeasPage from './pages/AllIdeasPage'
 
 function App() {
-  return (
-      <AllIdeasPage/>
-  )
+  return <AllIdeasPage />
 }
 
 export default App
