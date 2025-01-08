@@ -1,0 +1,6 @@
+# we cannot add comments in .json format, so we used .yml file instead.
+printWidth: 120
+trailingComma: es5
+tabWidth: 2
+semi: false
+singleQuote: true
