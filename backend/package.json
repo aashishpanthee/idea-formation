@@ -1,6 +1,7 @@
 {
-  "name": "backend",
+  "name": "@ideaformation/backend",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "ts-node-dev --rs ./src/index.ts",
     "build": "rimraf ./dist && tsc --build ./tsconfig.json",
@@ -10,7 +11,6 @@
   "repository": "https://github.com/aashishpanthee/idea-formation",
   "author": "Aashish Panthee",
   "license": "MIT",
-  "private": true,
   "dependencies": {
     "@trpc/server": "^10.45.2",
     "express": "^4.21.2"

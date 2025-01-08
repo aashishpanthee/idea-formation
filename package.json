@@ -1,0 +1,13 @@
+{
+  "name": "ideaformation",
+  "version": "1.0.0",
+  "repository": "https://github.com/aashishpanthee/idea-formation.git",
+  "author": "Aashish Panthee <aashishpanthee060@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces":{
+    "packages": [
+     "backend","web-app"
+    ]
+  }
+}
