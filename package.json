@@ -1,13 +1,24 @@
 {
   "name": "ideaformation",
   "version": "1.0.0",
+  "scripts": {
+    "backend": "yarn workspace @ideaformation/backend",
+    "webapp": "yarn workspace @ideaformation/web-app",
+    "dev": "concurrently \"yarn backend dev\" \"yarn webapp dev\"",
+    "types": "concurrently \"yarn backend types\" \"yarn webapp types\"",
+    "prettify": "concurrently \"yarn backend prettify\" \"yarn webapp prettify\""
+  },
   "repository": "https://github.com/aashishpanthee/idea-formation.git",
   "author": "Aashish Panthee <aashishpanthee060@gmail.com>",
   "license": "MIT",
   "private": true,
-  "workspaces":{
+  "workspaces": {
     "packages": [
-     "backend","web-app"
+      "backend",
+      "web-app"
     ]
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
