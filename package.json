@@ -6,7 +6,8 @@
     "webapp": "yarn workspace @ideaformation/web-app",
     "dev": "concurrently \"yarn backend dev\" \"yarn webapp dev\"",
     "types": "concurrently \"yarn backend types\" \"yarn webapp types\"",
-    "prettify": "concurrently \"yarn backend prettify\" \"yarn webapp prettify\""
+    "prettify": "concurrently \"yarn backend prettify\" \"yarn webapp prettify\"",
+    "prepare": "husky install"
   },
   "repository": "https://github.com/aashishpanthee/idea-formation.git",
   "author": "Aashish Panthee <aashishpanthee060@gmail.com>",
@@ -20,6 +21,8 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.3.0",
     "prettier": "3.4.2",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
