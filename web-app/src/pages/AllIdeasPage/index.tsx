@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom'
 import { trpc } from '../../lib/trpc'
+import { getViewIdeaRoute } from '../../lib/routes'
 
 function AllIdeasPage() {
   const { data, error, isLoading, isError } = trpc.getIdeas.useQuery()
@@ -16,7 +18,9 @@ function AllIdeasPage() {
         {ideas.map((idea) => {
           return (
             <div key={idea.title}>
-              <h2>{idea.title}</h2>
+              <h2>
+                <Link to={getViewIdeaRoute({ ideaId: `${idea.id}` })}>{idea.title}</Link>
+              </h2>
               <p>{idea.description}</p>
             </div>
           )
